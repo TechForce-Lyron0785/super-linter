@@ -26,7 +26,7 @@ FROM zricethezav/gitleaks:v8.30.1 AS gitleaks
 FROM yoheimuta/protolint:0.56.4 AS protolint
 FROM ghcr.io/clj-kondo/clj-kondo:2026.04.15-alpine AS clj-kondo
 FROM dart:3.11.6-sdk AS dart
-FROM mcr.microsoft.com/dotnet/sdk:10.0.203-alpine3.23 AS dotnet-sdk
+FROM mcr.microsoft.com/dotnet/sdk:10.0.300-alpine3.23 AS dotnet-sdk
 FROM composer/composer:2.9.7 AS php-composer
 FROM ghcr.io/aquasecurity/trivy:0.70.0 AS trivy
 FROM ghcr.io/yannh/kubeconform:v0.7.0 AS kubeconform
