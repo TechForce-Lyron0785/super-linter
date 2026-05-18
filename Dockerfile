@@ -7,7 +7,7 @@
 #########################################
 # Get dependency images as build stages #
 #########################################
-FROM alpine/terragrunt:1.15.2 AS terragrunt
+FROM alpine/terragrunt:1.15.3 AS terragrunt
 FROM dotenvlinter/dotenv-linter:4.0.0 AS dotenv-linter
 FROM ghcr.io/terraform-linters/tflint:v0.62.1 AS tflint
 FROM alpine/helm:4.2.0 AS helm
