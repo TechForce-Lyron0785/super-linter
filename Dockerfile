@@ -7,13 +7,13 @@
 #########################################
 # Get dependency images as build stages #
 #########################################
-FROM alpine/terragrunt:1.15.3 AS terragrunt
+FROM alpine/terragrunt:1.15.4 AS terragrunt
 FROM dotenvlinter/dotenv-linter:4.0.0 AS dotenv-linter
 FROM ghcr.io/terraform-linters/tflint:v0.62.1 AS tflint
 FROM alpine/helm:4.2.0 AS helm
 FROM golang:1.26.3-alpine AS golang
 FROM golangci/golangci-lint:v2.12.2 AS golangci-lint
-FROM goreleaser/goreleaser:v2.15.4 AS goreleaser
+FROM goreleaser/goreleaser:v2.16.0 AS goreleaser
 FROM hadolint/hadolint:v2.14.0-alpine AS dockerfile-lint
 FROM registry.k8s.io/kustomize/kustomize:v5.8.1 AS kustomize
 FROM hashicorp/terraform:1.15.4 AS terraform
