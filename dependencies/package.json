@@ -1,9 +1,9 @@
 {
   "name": "super-linter",
   "dependencies": {
-    "@babel/eslint-parser": "^7.29.7",
-    "@babel/preset-react": "^7.29.7",
-    "@babel/preset-typescript": "^7.29.7",
+    "@babel/eslint-parser": "^8.0.0",
+    "@babel/preset-react": "^8.0.0",
+    "@babel/preset-typescript": "^8.0.0",
     "@biomejs/biome": "^2.5.0",
     "@coffeelint/cli": "^5.2.11",
     "@commitlint/config-conventional": "^21.0.2",
@@ -32,8 +32,8 @@
     "react-dom": "^19.2.7",
     "react-intl": "^10.1.13",
     "react-redux": "^9.3.0",
-    "react-router-dom": "^7.17.0",
-    "renovate": "^43.224.0",
+    "react-router-dom": "^7.18.0",
+    "renovate": "^43.227.1",
     "stylelint": "^17.13.0",
     "stylelint-config-recommended-scss": "^17.0.1",
     "stylelint-config-standard": "^40.0.0",
