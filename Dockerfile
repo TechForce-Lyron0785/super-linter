@@ -11,7 +11,7 @@ FROM alpine/terragrunt:1.15.7 AS terragrunt
 FROM dotenvlinter/dotenv-linter:4.0.0 AS dotenv-linter
 FROM ghcr.io/terraform-linters/tflint:v0.63.1 AS tflint
 FROM alpine/helm:4.2.2 AS helm
-FROM golang:1.26.4-alpine AS golang
+FROM golang:1.27rc2-alpine AS golang
 FROM golangci/golangci-lint:v2.12.2 AS golangci-lint
 FROM goreleaser/goreleaser:v2.17.0 AS goreleaser
 FROM hadolint/hadolint:v2.14.0-alpine AS dockerfile-lint
