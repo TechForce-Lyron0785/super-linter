@@ -9,7 +9,7 @@
 #########################################
 FROM alpine/terragrunt:1.15.8 AS terragrunt
 FROM dotenvlinter/dotenv-linter:4.0.0 AS dotenv-linter
-FROM ghcr.io/terraform-linters/tflint:v0.63.1 AS tflint
+FROM ghcr.io/terraform-linters/tflint:v0.64.0 AS tflint
 FROM alpine/helm:4.2.3 AS helm
 FROM golang:1.27rc2-alpine AS golang
 FROM golangci/golangci-lint:v2.12.2 AS golangci-lint
@@ -21,7 +21,7 @@ FROM koalaman/shellcheck:v0.11.0 AS shellcheck
 FROM mstruebing/editorconfig-checker:v3.8.0 AS editorconfig-checker
 FROM mvdan/shfmt:v3.13.1 AS shfmt
 FROM rhysd/actionlint:1.7.12 AS actionlint
-FROM scalameta/scalafmt:v3.11.3 AS scalafmt
+FROM scalameta/scalafmt:v3.11.4 AS scalafmt
 FROM zricethezav/gitleaks:v8.30.1 AS gitleaks
 FROM yoheimuta/protolint:0.56.4 AS protolint
 FROM ghcr.io/clj-kondo/clj-kondo:2026.05.25-alpine AS clj-kondo
