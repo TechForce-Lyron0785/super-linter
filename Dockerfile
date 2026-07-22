@@ -31,7 +31,7 @@ FROM composer/composer:2.10.2 AS php-composer
 FROM ghcr.io/aquasecurity/trivy:0.72.0 AS trivy
 FROM ghcr.io/yannh/kubeconform:v0.8.0 AS kubeconform
 
-FROM python:3.15.0b3-alpine3.23 AS python-base
+FROM python:3.15.0b4-alpine3.23 AS python-base
 
 FROM python-base AS clang-format
 
