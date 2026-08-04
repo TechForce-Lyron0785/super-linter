@@ -14,11 +14,11 @@ FROM alpine/helm:4.2.3 AS helm
 FROM golang:1.27rc2-alpine AS golang
 FROM golangci/golangci-lint:v2.12.2 AS golangci-lint
 FROM goreleaser/goreleaser:v2.17.1 AS goreleaser
-FROM hadolint/hadolint:v2.15.0-alpine AS dockerfile-lint
+FROM hadolint/hadolint:v2.15.1-alpine AS dockerfile-lint
 FROM registry.k8s.io/kustomize/kustomize:v5.8.1 AS kustomize
 FROM hashicorp/terraform:1.15.8 AS terraform
 FROM koalaman/shellcheck:v0.11.0 AS shellcheck
-FROM mstruebing/editorconfig-checker:v3.8.0 AS editorconfig-checker
+FROM mstruebing/editorconfig-checker:v3.9.0 AS editorconfig-checker
 FROM mvdan/shfmt:v3.13.1 AS shfmt
 FROM rhysd/actionlint:1.7.12 AS actionlint
 FROM scalameta/scalafmt:v3.11.5 AS scalafmt
