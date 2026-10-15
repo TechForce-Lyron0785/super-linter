@@ -22,7 +22,7 @@ GEM
     drb (2.2.3)
     i18n (1.15.2)
       concurrent-ruby (~> 1.0)
-    json (3.0.2)
+    json (3.1.0)
     language_server-protocol (3.17.0.6)
     lint_roller (1.1.0)
     logger (1.7.0)
@@ -38,14 +38,14 @@ GEM
     rack (3.2.7)
     rainbow (3.1.1)
     regexp_parser (2.13.1)
-    rubocop (1.91.0)
+    rubocop (1.92.0)
       json (>= 2.3)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.1.0)
       parallel (>= 1.10)
       parser (>= 3.3.0.2)
       rainbow (>= 2.2.2, < 4.0)
-      regexp_parser (>= 2.9.3, < 3.0)
+      regexp_parser (>= 2.11.3, < 3.0)
       rubocop-ast (>= 1.49.0, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 2.4.0, < 4.0)
@@ -83,9 +83,9 @@ GEM
       lint_roller (~> 1.1)
       regexp_parser (>= 2.0)
       rubocop (~> 1.86, >= 1.86.2)
-    rubocop-rspec_rails (2.32.0)
+    rubocop-rspec_rails (2.33.0)
       lint_roller (~> 1.1)
-      rubocop (~> 1.72, >= 1.72.1)
+      rubocop (~> 1.89)
       rubocop-rspec (~> 3.5)
     ruby-progressbar (1.13.0)
     securerandom (0.4.1)
@@ -101,7 +101,7 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
-  rubocop (~> 1.91.0)
+  rubocop (~> 1.92.0)
   rubocop-capybara (~> 3.0)
   rubocop-factory_bot (~> 2.28)
   rubocop-github (~> 0.29.0)
@@ -110,7 +110,7 @@ DEPENDENCIES
   rubocop-rails (~> 2.38)
   rubocop-rake (~> 0.7.1)
   rubocop-rspec (~> 3.10.2)
-  rubocop-rspec_rails (~> 2.32)
+  rubocop-rspec_rails (~> 2.33)
 
 BUNDLED WITH
   2.6.8
