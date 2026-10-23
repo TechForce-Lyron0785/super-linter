@@ -9,7 +9,7 @@
 #########################################
 FROM alpine/terragrunt:1.16.6 AS terragrunt
 FROM dotenvlinter/dotenv-linter:4.0.0 AS dotenv-linter
-FROM ghcr.io/terraform-linters/tflint:v0.64.0 AS tflint
+FROM ghcr.io/terraform-linters/tflint:v0.65.0 AS tflint
 FROM alpine/helm:4.3.1 AS helm
 FROM golang:1.27-alpine AS golang
 FROM golangci/golangci-lint:v2.15.0 AS golangci-lint
