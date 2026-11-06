@@ -7,7 +7,7 @@
 #########################################
 # Get dependency images as build stages #
 #########################################
-FROM alpine/terragrunt:1.17.0 AS terragrunt
+FROM alpine/terragrunt:1.17.1 AS terragrunt
 FROM dotenvlinter/dotenv-linter:4.0.0 AS dotenv-linter
 FROM ghcr.io/terraform-linters/tflint:v0.65.0 AS tflint
 FROM alpine/helm:4.3.1 AS helm
@@ -27,8 +27,8 @@ FROM yoheimuta/protolint:0.58.0 AS protolint
 FROM ghcr.io/clj-kondo/clj-kondo:2026.10.26-alpine AS clj-kondo
 FROM dart:3.13.6-sdk AS dart
 FROM mcr.microsoft.com/dotnet/sdk:10.0.401-alpine3.23 AS dotnet-sdk
-FROM composer/composer:2.11.0 AS php-composer
-FROM ghcr.io/aquasecurity/trivy:0.76.1 AS trivy
+FROM composer/composer:2.11.1 AS php-composer
+FROM ghcr.io/aquasecurity/trivy:0.76.2 AS trivy
 FROM ghcr.io/yannh/kubeconform:v0.8.0 AS kubeconform
 
 FROM python:3.15.0-alpine3.23 AS python-base
