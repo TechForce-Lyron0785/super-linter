@@ -25,7 +25,7 @@ FROM scalameta/scalafmt:v3.11.5 AS scalafmt
 FROM zricethezav/gitleaks:v8.30.1 AS gitleaks
 FROM yoheimuta/protolint:0.58.0 AS protolint
 FROM ghcr.io/clj-kondo/clj-kondo:2026.10.26-alpine AS clj-kondo
-FROM dart:3.13.6-sdk AS dart
+FROM dart:3.13.7-sdk AS dart
 FROM mcr.microsoft.com/dotnet/sdk:10.0.401-alpine3.23 AS dotnet-sdk
 FROM composer/composer:2.11.1 AS php-composer
 FROM ghcr.io/aquasecurity/trivy:0.76.2 AS trivy
