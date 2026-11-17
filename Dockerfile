@@ -10,13 +10,13 @@
 FROM alpine/terragrunt:1.17.1 AS terragrunt
 FROM dotenvlinter/dotenv-linter:4.0.0 AS dotenv-linter
 FROM ghcr.io/terraform-linters/tflint:v0.66.0 AS tflint
-FROM alpine/helm:4.3.1 AS helm
+FROM alpine/helm:4.3.2 AS helm
 FROM golang:1.27-alpine AS golang
 FROM golangci/golangci-lint:v2.15.0 AS golangci-lint
-FROM goreleaser/goreleaser:v2.20.0 AS goreleaser
+FROM goreleaser/goreleaser:v2.20.2 AS goreleaser
 FROM hadolint/hadolint:v2.15.1-alpine AS dockerfile-lint
 FROM registry.k8s.io/kustomize/kustomize:v5.8.3 AS kustomize
-FROM hashicorp/terraform:1.17.1 AS terraform
+FROM hashicorp/terraform:1.17.2 AS terraform
 FROM koalaman/shellcheck:v0.11.0 AS shellcheck
 FROM mstruebing/editorconfig-checker:4.0.2 AS editorconfig-checker
 FROM mvdan/shfmt:v3.14.1 AS shfmt
@@ -27,7 +27,7 @@ FROM yoheimuta/protolint:0.58.0 AS protolint
 FROM ghcr.io/clj-kondo/clj-kondo:2026.10.26-alpine AS clj-kondo
 FROM dart:3.13.7-sdk AS dart
 FROM mcr.microsoft.com/dotnet/sdk:10.0.401-alpine3.23 AS dotnet-sdk
-FROM composer/composer:2.11.1 AS php-composer
+FROM composer/composer:2.11.2 AS php-composer
 FROM ghcr.io/aquasecurity/trivy:0.76.2 AS trivy
 FROM ghcr.io/yannh/kubeconform:v0.8.0 AS kubeconform
 
